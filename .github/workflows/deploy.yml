@@ -26,13 +26,13 @@ jobs:
           BASE_PATH: "/embeddedboys.github.io"
         run: |
           npm run build
-          touch build/.nojekyll
+          touch .svelte-kit/output/.nojekyll
 
       - name: upload atrifacts
         uses: actions/upload-pages-artifact@v1
         with:
           # this should match the `pages` option in your adapter-static options
-          path: "build/"
+          path: ".svelte-kit/output/"
 
   deploy:
     needs: build_site

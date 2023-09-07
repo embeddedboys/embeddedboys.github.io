@@ -5,5 +5,5 @@ theme = 'DoIt'
 
 [params.home.profile]
     gravatarEmail = "writeforever@foxmail.com"
-    avatarURL = "/images/boy.jpeg"
+    avatarURL = "/images/embeddedboys.webp"
     avatarLinkURL = ""

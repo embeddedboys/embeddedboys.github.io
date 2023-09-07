@@ -7,10 +7,10 @@ name = "embeddedboys"
 theme = 'DoIt'
 images = ["/logo.png"]
 
-[params.home.profile]
-    gravatarEmail = "writeforever@foxmail.com"
-    avatarURL = "/images/embeddedboys.webp"
-    avatarLinkURL = ""
+# [params.home.profile]
+#     gravatarEmail = "writeforever@foxmail.com"
+#     avatarURL = "/images/embeddedboys.webp"
+#     avatarLinkURL = ""
 
 [params.social]
   [params.social.Mastodon]

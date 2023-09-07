@@ -1,7 +1,9 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'embeddedboys.org'
+name = "embeddedboys"
 theme = 'DoIt'
+images = ["/logo.png"]
 
 [params.home.profile]
     gravatarEmail = "writeforever@foxmail.com"

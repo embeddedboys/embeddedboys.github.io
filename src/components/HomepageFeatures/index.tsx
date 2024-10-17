@@ -10,17 +10,16 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
+    title: '完全开源',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        我们开发的每一个项目都具有完全开源的软硬件设计，基于MIT许可证
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: '专注于质量',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
@@ -30,7 +29,7 @@ const FeatureList: FeatureItem[] = [
     ),
   },
   {
-    title: 'Powered by React',
+    title: '价格亲民',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>

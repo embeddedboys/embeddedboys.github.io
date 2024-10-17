@@ -8,7 +8,7 @@ const config: Config = {
   favicon: 'img/embeddedboys-icon.png',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'http://embeddedboys.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -17,6 +17,7 @@ const config: Config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'embeddedboys', // Usually your GitHub org/user name.
   projectName: 'embeddedboys.github.io', // Usually your repo name.
+  deploymentBranch: "gh-pages",
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -27,11 +28,6 @@ const config: Config = {
   i18n: {
     defaultLocale: 'zh-Hans',
     locales: ['zh-Hans'],
-    // localeConfigs: {
-    //   'zh-Hans' : {
-    //     direction: 'rtl',
-    //   }
-    // }
   },
 
   presets: [
@@ -45,21 +41,21 @@ const config: Config = {
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
-        },
+        // blog: {
+        //   showReadingTime: false,
+        //   feedOptions: {
+        //     type: ['rss', 'atom'],
+        //     xslt: true,
+        //   },
+        //   // Please change this to your repo.
+        //   // Remove this to remove the "edit this page" links.
+        //   // editUrl:
+        //   //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+        //   // Useful options to enforce blogging best practices
+        //   onInlineTags: 'warn',
+        //   onInlineAuthors: 'warn',
+        //   onUntruncatedBlogPosts: 'warn',
+        // },
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -84,7 +80,7 @@ const config: Config = {
           position: 'left',
           label: '产品中心',
         },
-        {to: '/about', label: '关于我们', position: 'left'},
+        // {to: '/blog/embeddedboys', label: '关于我们', position: 'left'},
         {
           href: 'http://forum.embeddedboys.com',
           label: '在线论坛',
@@ -99,42 +95,30 @@ const config: Config = {
     footer: {
       style: 'dark',
       links: [
+        // {
+        //   title: '关于我们',
+        //   items: [
+        //     {
+        //       label: '了解embeddedboys',
+        //       to: '/blog/embeddedboys.md',
+        //     },
+        //   ],
+        // },
         {
-          title: 'Docs',
+          title: '社区',
           items: [
             {
-              label: 'Tutorial',
-              to: '/docs/intro',
+              label: '官方论坛',
+              href: 'http://forum.embeddedboys.com',
             },
           ],
         },
         {
-          title: 'Community',
+          title: '关注我们',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
-            },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              label: 'BiliBili',
+              href: 'https://space.bilibili.com/1380422187',
             },
           ],
         },
